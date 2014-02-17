@@ -1,0 +1,5 @@
+Name CollabArchV6
+Language LanguageBuilder
+Root .\CollabArchV6
+Model CollabArchV6.xml
+Assembly bin\CollabArchV6.dll

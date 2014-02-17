@@ -1,0 +1,4 @@
+Name CollabArchV6
+Assembly bin\CollabArchV6.dll
+DesignerFactory Designer.Factories.CollabArchV6ModelFactory
+AnalystFactory Analyst.Factories.CollabArchV6ModelFactory
