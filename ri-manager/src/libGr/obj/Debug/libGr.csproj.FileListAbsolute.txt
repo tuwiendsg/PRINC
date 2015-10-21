@@ -1,0 +1,9 @@
+C:\code\RIManager\bin\libGr.dll
+C:\code\RIManager\bin\libGr.pdb
+C:\code\RIManager\src\libGr\obj\Debug\libGr.csprojResolveAssemblyReference.cache
+C:\code\RIManager\src\libGr\obj\Debug\libGr.dll
+C:\code\RIManager\src\libGr\obj\Debug\libGr.pdb
+C:\Users\Ogi\Dropbox\RotatingPresidencySimulation\bin\libGr.dll
+C:\Users\Ogi\Dropbox\RotatingPresidencySimulation\bin\libGr.pdb
+C:\Users\Ogi\Dropbox\RotatingPresidencySimulation\src\libGr\obj\Debug\libGr.dll
+C:\Users\Ogi\Dropbox\RotatingPresidencySimulation\src\libGr\obj\Debug\libGr.pdb

@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="de.unika.ipd.grGen.libGr.ValidateInfo" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAIBAAAAAIAAAAiACAAAA=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="de.unika.ipd.grGen.libGr.AttributeType" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAEAABAAAQAQAAQBBAAAgAAAAAAEAA=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="de.unika.ipd.grGen.libGr.EnumMember" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="de.unika.ipd.grGen.libGr.EnumAttributeType" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAQAAAAAAAQAAgAEAAAAAAA=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="de.unika.ipd.grGen.libGr.SetValueType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="de.unika.ipd.grGen.libGr.GrGenType" Collapsed="true">
+    <Position X="4.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAILQAAAABAABAAEACCRAgQAAQBABgAkAABACAIABQg=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="de.unika.ipd.grGen.libGr.NodeType" Collapsed="true">
+    <Position X="7" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIAQEAAQQAAAAAAAAkAAAAAQQAAAABEAABAAAAAAAA=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="de.unika.ipd.grGen.libGr.EdgeType" Collapsed="true">
+    <Position X="2.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAQEAAQQACAgAQAAAAAAAAQUAAAEBEAABAAAAAAAA=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="de.unika.ipd.grGen.libGr.VarType" Collapsed="true">
+    <Position X="4.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAABAAAAAAgBABAAQAAABJAIAAAQAACAQAAAg=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="de.unika.ipd.grGen.libGr.ConnectionAssertionError" Collapsed="true">
+    <Position X="11" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAEAAAAAAAAAAIAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="de.unika.ipd.grGen.libGr.IGraph">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAwwhikAgSAEEhACAAEhASAAAAAaQgwFimCABHIALI=</HashCode>
+      <FileName>IGraph.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="de.unika.ipd.grGen.libGr.ITypeModel" Collapsed="true">
+    <Position X="8.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAABACAAAAAAAAEAAQAAAAAAAAQ=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="de.unika.ipd.grGen.libGr.INodeModel" Collapsed="true">
+    <Position X="7" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAQ=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="de.unika.ipd.grGen.libGr.IEdgeModel" Collapsed="true">
+    <Position X="9.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAQ=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="de.unika.ipd.grGen.libGr.IGraphModel" Collapsed="true">
+    <Position X="11" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAABAAAAAAAAEAAAAAIAAAAAAAgABAA=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="de.unika.ipd.grGen.libGr.CAEType" Collapsed="true">
+    <Position X="12.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAADAAAACAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="de.unika.ipd.grGen.libGr.AttributeKind" Collapsed="true">
+    <Position X="11" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAgAAAEIAACAAAAAAgAgAACECAAAAgIAgAgCA=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="de.unika.ipd.grGen.libGr.Directedness" Collapsed="true">
+    <Position X="14.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAIAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>modelInterface.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="de.unika.ipd.grGen.libGr.NodeAddedHandler" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>IGraph.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="de.unika.ipd.grGen.libGr.EdgeAddedHandler">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IGraph.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="de.unika.ipd.grGen.libGr.RemovingNodeHandler" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>IGraph.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="de.unika.ipd.grGen.libGr.RemovingEdgeHandler">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IGraph.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="de.unika.ipd.grGen.libGr.RemovingEdgesHandler">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>IGraph.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="de.unika.ipd.grGen.libGr.ClearingGraphHandler">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IGraph.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="de.unika.ipd.grGen.libGr.ChangingNodeAttributeHandler">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAgAAAAAAIAAAAAACAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>IGraph.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="de.unika.ipd.grGen.libGr.ChangingEdgeAttributeHandler" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAgAAAAAAIAAAAQACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IGraph.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="de.unika.ipd.grGen.libGr.RetypingNodeHandler">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>IGraph.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="de.unika.ipd.grGen.libGr.RetypingEdgeHandler">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IGraph.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="de.unika.ipd.grGen.libGr.RedirectingEdgeHandler">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IGraph.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="de.unika.ipd.grGen.libGr.SettingAddedElementNamesHandler">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IGraph.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

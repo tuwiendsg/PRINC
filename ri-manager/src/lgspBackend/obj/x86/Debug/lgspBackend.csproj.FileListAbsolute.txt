@@ -1,0 +1,7 @@
+C:\code\RIManager\src\lgspBackend\bin\x86\Debug\lgspBackend.dll
+C:\code\RIManager\src\lgspBackend\bin\x86\Debug\lgspBackend.pdb
+C:\code\RIManager\src\lgspBackend\bin\x86\Debug\libGr.dll
+C:\code\RIManager\src\lgspBackend\bin\x86\Debug\libGr.pdb
+C:\code\RIManager\src\lgspBackend\obj\x86\Debug\lgspBackend.csprojResolveAssemblyReference.cache
+C:\code\RIManager\src\lgspBackend\obj\x86\Debug\lgspBackend.dll
+C:\code\RIManager\src\lgspBackend\obj\x86\Debug\lgspBackend.pdb

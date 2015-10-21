@@ -1,0 +1,124 @@
+using ReplaceManager;
+
+test checkStructurePre {
+	x1:Employee;
+	if { x1.id==1;}
+	
+	x2:Employee;
+	if {x2.id==2;}
+	
+	x3:Employee;
+	if { x3.id==3;}
+	
+	x4:Employee;
+	if { x4.id==4;}
+	
+	x1 -:ManagedBy-> x4;
+	x2 -:ManagedBy-> x4;
+	x3 -:ManagedBy-> x4;
+}
+
+test checkStructurePost {
+	x1:Employee;
+	if { x1.id==1;}
+	
+	x2:Employee;
+	if {x2.id==2;}
+	
+	x3:Employee;
+	if { x3.id==3;}
+	
+	x4:Employee;
+	if { x4.id==4;}
+	
+	x4 -:ManagedBy-> x1;
+	x3 -:ManagedBy-> x1;
+	x2 -:ManagedBy-> x1;
+}
+
+rule replaceBadManager {
+	x1:Employee;
+	if { x1.id==1;}
+	
+	x2:Employee;
+	if { x2.id==2;}
+	
+	x3:Employee;
+	if { x3.id==3;}
+	
+	x4:Employee;
+	if { x4.id==4;}
+	
+	x1 -:ManagedBy-> x4;
+	x2 -:ManagedBy-> x4;
+	x3 -:ManagedBy-> x4;
+	
+	modify {
+		x4 -:ManagedBy-> x1;
+		x3 -:ManagedBy-> x1;
+		x2 -:ManagedBy-> x1;
+	}
+	
+}
+
+rule MANAGER(var mark:int):(Node)  
+{
+	manager:Employee;
+	if { manager.marked==mark; }
+	
+	worker:Employee;
+	if { worker.marked==mark; }
+		
+	worker -:ManagedBy-> manager;
+	
+	negative {
+		otherManager:Employee;
+		if { otherManager.marked==mark;}
+		
+		manager -:ManagedBy-> otherManager; 
+	}
+	
+	modify {
+		return (manager);
+	}
+}
+
+rule SET_MANAGER(var mark:int, var newMgrID:int)  
+{
+	newMgr:Employee;
+	if { newMgr.marked == mark && newMgr.id == newMgrID; }
+		
+	notNewMgr:Employee;
+	if { notNewMgr.marked == mark && notNewMgr.id != newMgrID; }
+	
+	<-oldRelation:ManagedBy-> notNewMgr;
+	
+	negative {
+		notNewMgr-:ManagedBy->newMgr;
+	}
+	
+	modify {
+		notNewMgr -:ManagedBy-> newMgr;
+		delete(oldRelation);
+	}
+}
+
+rule SET_MANAGER2(var mark:int, var newMgrID:int)  
+{
+	newMgr:Employee;
+	if { newMgr.marked == mark && newMgr.id == newMgrID; }
+		
+	notNewMgr:Employee;
+	if { notNewMgr.marked == mark && notNewMgr.id != newMgrID; }
+	
+	<-oldRelation:ManagedBy-> notNewMgr;
+	
+	negative {
+		notNewMgr-:ManagedBy->newMgr;
+	}
+	
+	modify {
+		notNewMgr -:ManagedBy-> newMgr;
+		delete(oldRelation);
+	}
+}

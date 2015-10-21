@@ -1,0 +1,5 @@
+Data Source=ORION2; Initial Catalog=RModDB; User Id=sa; Password=dexter;
+
+c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin
+
+sqlmetal /server:ORION2 /database:RModDB /user:sa /password:dexter /language:csharp /map:"c:/RModDB_LINQ_Mapping.xml" /code:"c:/RModDB_LINQ_GeneratedCode.cs" /namespace:at.ac.tuwien.infosys.dsg.RIFramework.RMod.RModDB

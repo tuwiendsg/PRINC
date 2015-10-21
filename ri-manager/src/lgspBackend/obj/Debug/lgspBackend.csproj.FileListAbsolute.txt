@@ -1,0 +1,10 @@
+C:\code\RIManager\bin\lgspBackend.dll
+C:\code\RIManager\bin\lgspBackend.pdb
+C:\code\RIManager\src\lgspBackend\obj\Debug\lgspBackend.csprojResolveAssemblyReference.cache
+C:\code\RIManager\src\lgspBackend\obj\Debug\lgspBackend.dll
+C:\code\RIManager\src\lgspBackend\obj\Debug\lgspBackend.pdb
+C:\Users\Ogi\Dropbox\RotatingPresidencySimulation\bin\lgspBackend.dll
+C:\Users\Ogi\Dropbox\RotatingPresidencySimulation\bin\lgspBackend.pdb
+C:\Users\Ogi\Dropbox\RotatingPresidencySimulation\src\lgspBackend\obj\Debug\lgspBackend.csprojResolveAssemblyReference.cache
+C:\Users\Ogi\Dropbox\RotatingPresidencySimulation\src\lgspBackend\obj\Debug\lgspBackend.dll
+C:\Users\Ogi\Dropbox\RotatingPresidencySimulation\src\lgspBackend\obj\Debug\lgspBackend.pdb

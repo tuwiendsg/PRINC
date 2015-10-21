@@ -1,0 +1,12 @@
+new graph ReplaceManager.grg "ReplaceManager"
+
+new :Employee($="emp1", id=1, marked=0)
+new :Employee($="emp2", id=2, marked=0)
+new :Employee($="emp3", id=3, marked=0)
+new :Employee($="emp4", id=4, marked=0)
+
+new @("emp1")-:ManagedBy(id=1)-> @("emp4")
+new @("emp2")-:ManagedBy(id=2)-> @("emp4")
+new @("emp3")-:ManagedBy(id=3)-> @("emp4")
+
+# debug exec checkStructurePre && replaceBadManager

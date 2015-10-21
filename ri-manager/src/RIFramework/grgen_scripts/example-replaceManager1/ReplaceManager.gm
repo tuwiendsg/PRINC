@@ -1,0 +1,9 @@
+node class Employee {
+    id: int;
+marked: int;
+}
+
+edge class ManagedBy {
+	id: int;
+marked: int;	
+}

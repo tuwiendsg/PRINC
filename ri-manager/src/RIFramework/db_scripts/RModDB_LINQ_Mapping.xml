@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="RModDB" xmlns="http://schemas.microsoft.com/linqtosql/mapping/2007">
+  <Table Name="dbo.Event" Member="Event">
+    <Type Name="at.ac.tuwien.infosys.dsg.RIFramework.RMod.RModDB.Event">
+      <Column Name="EventID" Member="EventID" Storage="_EventID" DbType="BigInt NOT NULL" IsPrimaryKey="true" />
+      <Column Name="TypeID" Member="TypeID" Storage="_TypeID" DbType="Int" />
+      <Column Name="ClockTick" Member="ClockTick" Storage="_ClockTick" DbType="BigInt" />
+      <Association Name="FK_Event_EventType" Member="EventType" Storage="_EventType" ThisKey="TypeID" OtherKey="TypeID" IsForeignKey="true" />
+      <Association Name="FK_EventApplications_EventID" Member="EventApplications" Storage="_EventApplications" ThisKey="EventID" OtherKey="EventID" DeleteRule="CASCADE" />
+      <Association Name="FK_EventData_EventID" Member="EventData" Storage="_EventData" ThisKey="EventID" OtherKey="EventID" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventApplications" Member="EventApplications">
+    <Type Name="at.ac.tuwien.infosys.dsg.RIFramework.RMod.RModDB.EventApplications">
+      <Column Name="EventID" Member="EventID" Storage="_EventID" DbType="BigInt NOT NULL" IsPrimaryKey="true" />
+      <Column Name="WorkerID" Member="WorkerID" Storage="_WorkerID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Association Name="FK_EventApplications_EventID" Member="Event" Storage="_Event" ThisKey="EventID" OtherKey="EventID" DeleteOnNull="true" IsForeignKey="true" />
+      <Association Name="FK_EventApplications_WorkerID" Member="Worker" Storage="_Worker" ThisKey="WorkerID" OtherKey="WorkerID" DeleteOnNull="true" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventData" Member="EventData">
+    <Type Name="at.ac.tuwien.infosys.dsg.RIFramework.RMod.RModDB.EventData">
+      <Column Name="EventID" Member="EventID" Storage="_EventID" DbType="BigInt NOT NULL" IsPrimaryKey="true" />
+      <Column Name="FieldID" Member="FieldID" Storage="_FieldID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="FieldValue" Member="FieldValue" Storage="_FieldValue" DbType="NVarChar(4000)" />
+      <Association Name="FK_EventData_EventID" Member="Event" Storage="_Event" ThisKey="EventID" OtherKey="EventID" DeleteOnNull="true" IsForeignKey="true" />
+      <Association Name="FK_EventData_FieldID" Member="EventFields" Storage="_EventFields" ThisKey="FieldID" OtherKey="EventFieldID" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventFields" Member="EventFields">
+    <Type Name="at.ac.tuwien.infosys.dsg.RIFramework.RMod.RModDB.EventFields">
+      <Column Name="EventFieldID" Member="EventFieldID" Storage="_EventFieldID" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="EventTypeID" Member="EventTypeID" Storage="_EventTypeID" DbType="Int" />
+      <Column Name="FieldName" Member="FieldName" Storage="_FieldName" DbType="NVarChar(40)" />
+      <Association Name="FK_EventData_FieldID" Member="EventData" Storage="_EventData" ThisKey="EventFieldID" OtherKey="FieldID" DeleteRule="NO ACTION" />
+      <Association Name="FK_EventFields_EventType" Member="EventType" Storage="_EventType" ThisKey="EventTypeID" OtherKey="TypeID" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventType" Member="EventType">
+    <Type Name="at.ac.tuwien.infosys.dsg.RIFramework.RMod.RModDB.EventType">
+      <Column Name="TypeID" Member="TypeID" Storage="_TypeID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="Name" Member="Name" Storage="_Name" DbType="NVarChar(40)" />
+      <Association Name="FK_Event_EventType" Member="Event" Storage="_Event" ThisKey="TypeID" OtherKey="TypeID" DeleteRule="CASCADE" IsUnique="true" />
+      <Association Name="FK_EventFields_EventType" Member="EventFields" Storage="_EventFields" ThisKey="TypeID" OtherKey="EventTypeID" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Worker" Member="Worker">
+    <Type Name="at.ac.tuwien.infosys.dsg.RIFramework.RMod.RModDB.Worker">
+      <Column Name="WorkerID" Member="WorkerID" Storage="_WorkerID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="Name" Member="Name" Storage="_Name" DbType="NVarChar(40)" />
+      <Column Name="ObjectUID" Member="ObjectUID" Storage="_ObjectUID" DbType="BigInt" />
+      <Association Name="FK_EventApplications_WorkerID" Member="EventApplications" Storage="_EventApplications" ThisKey="WorkerID" OtherKey="WorkerID" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,5 @@
+C:\code\RIManager\src\libGr\bin\x86\Debug\libGr.dll
+C:\code\RIManager\src\libGr\bin\x86\Debug\libGr.pdb
+C:\code\RIManager\src\libGr\obj\x86\Debug\libGr.csprojResolveAssemblyReference.cache
+C:\code\RIManager\src\libGr\obj\x86\Debug\libGr.dll
+C:\code\RIManager\src\libGr\obj\x86\Debug\libGr.pdb
